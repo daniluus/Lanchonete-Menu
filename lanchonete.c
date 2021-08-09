@@ -10,7 +10,7 @@ int main()
     precoHS = 6.50;
     precoXB = 7.50;
     do{
-        printf("\nEscolha uma opcao:\n");
+        printf("\n\nEscolha uma opcao:\n");
         printf("==================\n");
         printf("1. Escolher lanche.\n");
         printf("2. Pagar lanche.\n");
@@ -19,12 +19,12 @@ int main()
         scanf("%d", &opcao);
         
         if(opcao == 1){
-            while(lanche != 3){
+            while(lanche != 0){
                 printf("\nEscolha uma opcao:\n");
                 printf("==================\n");
                 printf("1. Hamburguer simples   R$: 6,50\n");
                 printf("2. X-burguer            R$: 7,50 \n");
-                printf("3. Sair.\n");  
+                printf("0. Sair.\n"); 
                 
                 scanf("%d", &lanche);
                 
@@ -53,10 +53,9 @@ int main()
             
         }
         
-    }while(opcao == "3");
+    }while(opcao != 3);
     
     
 
     return 0;
 }
-
