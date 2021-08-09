@@ -24,7 +24,7 @@ int main()
                 printf("==================\n");
                 printf("1. Hamburguer simples   R$: 6,50\n");
                 printf("2. X-burguer            R$: 7,50 \n");
-                printf("0. Sair.\n"); 
+                printf("0. Voltar menu anterior.\n"); 
                 
                 scanf("%d", &lanche);
                 
