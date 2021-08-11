@@ -13,7 +13,7 @@ int main()
         printf("\n\nEscolha uma opcao:\n");
         printf("==================\n");
         printf("1. Escolher lanche.\n");
-        printf("2. Pagar lanche.\n");
+        printf("2. Menu.\n");
         printf("3. Sair.\n");
         
         scanf("%d", &opcao);
@@ -50,7 +50,18 @@ int main()
                 printf("\n==================\n");
                 printf("Total: R$: %.2f", total);
             }
+        }
+        else if(opcao == 2){
             
+            printf("\n===== MENU =====\n");
+            printf("==================\n");
+            printf("\n===== HAMBUGUERES =====\n");
+            printf("1. Hamburguer simples   R$: 6,50\n");
+            printf("2. X-burguer            R$: 7,50 \n");
+            printf("\n===== BEBIDAS =====\n");
+            printf("1. Coca-Cola Lata   R$: 5,50\n");
+            printf("2. Pepsi Lata   R$: 5,50\n");
+            printf("3. Guarana Lata   R$: 5,50\n");
         }
         
     }while(opcao != 3);
