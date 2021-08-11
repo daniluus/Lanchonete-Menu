@@ -16,6 +16,7 @@ int main()
         printf("2. Menu.\n");
         printf("3. Sair.\n");
         
+        printf("\nOpcao: ");
         scanf("%d", &opcao);
         
         if(opcao == 1){
@@ -26,6 +27,7 @@ int main()
                 printf("2. X-burguer            R$: 7,50 \n");
                 printf("0. Voltar menu anterior.\n"); 
                 
+                printf("\nOpcao: ");
                 scanf("%d", &lanche);
                 
                 switch(lanche){
@@ -52,16 +54,23 @@ int main()
             }
         }
         else if(opcao == 2){
+            while(opcao != 0){
             
-            printf("\n===== MENU =====\n");
-            printf("==================\n");
-            printf("\n===== HAMBUGUERES =====\n");
-            printf("1. Hamburguer simples   R$: 6,50\n");
-            printf("2. X-burguer            R$: 7,50 \n");
-            printf("\n===== BEBIDAS =====\n");
-            printf("1. Coca-Cola Lata   R$: 5,50\n");
-            printf("2. Pepsi Lata   R$: 5,50\n");
-            printf("3. Guarana Lata   R$: 5,50\n");
+                printf("\n============== MENU ==============\n");
+                printf("==================================\n");
+                printf("\n===== HAMBUGUERES =====\n");
+                printf("1. Hamburguer simples   R$: 6,50\n");
+                printf("2. X-burguer            R$: 7,50 \n");
+                printf("\n===== BEBIDAS =====\n");
+                printf("1. Coca-Cola Lata   R$: 5,50\n");
+                printf("2. Pepsi Lata   R$: 5,50\n");
+                printf("3. Guarana Lata   R$: 5,50\n");
+                
+                printf("\n0. Voltar menu anterior.\n");
+                
+                printf("\nOpcao: ");
+                scanf("%d", &opcao);
+            }
         }
         
     }while(opcao != 3);
